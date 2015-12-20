@@ -1,0 +1,19 @@
+name: PingViewer
+author: TheRealBuggy
+version: A
+description: Este plugin permite voce ver seu ping ou o de outras pessoas!
+main: io.therealbuggy.pingviewer.PingViewer
+commands:
+  pingviewer:
+    description: Ver a latencia de outro jogador!
+    permission: pingviewer.anotherplayer
+    permission-message: Voce nao tem permissao para ver a latencia de outros jogadores.
+    aliases: [pingjogador, latenciajogador, latenciade]
+    usage: /<command> jogador
+  pingv:
+    description: Ver a sua latencia.
+    aliases: [ping, myping, latencia]
+
+permissions:
+  pingviewer.anotherplayer:
+    description: Permite que o jogador veja o ping de qualquer jogador!

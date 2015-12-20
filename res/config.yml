@@ -1,0 +1,38 @@
+pingviewer:
+  # Se habilitado mostra a qualidade da conexao (sim/s true/t y/yes = Sim) (nao/no/n false/f = Nao)
+  mostrarQualidade: sim
+  # Se habilitado mostra a latencia (ping) (sim/s true/t = Sim) (nao/no/n false/f = Nao)
+  mostrarLatencia: sim
+  # Definicao das mesagens
+  mensagem:
+    # Caso esteja apresentando dados de um jogador especifico esta é a mensagem q será utilizada
+    mensagem: '&6 Mostrando informacoes de: $jogador'
+    latencia:
+      # Formato que o ping será mostrado
+      formato: '&6 Latencia: $latencia ms'
+      # Cores dependendo da latencia
+      # Se informado 30, será utilizada a cor definida quando a latencia estiver entre 0 e 30
+      # Se o proximo valor informado for 60, será utilizada a cor definida caso a latencia esteja entre 30 e 60
+      # E assim por diante
+      cores:
+        30: '&b'
+        60: '&e'
+        100: '&a'
+        200: '&7'
+        500: '&8'
+        1000: '&c'
+
+    qualidade:
+      # Formato que a qualidade da conexao será exibida
+      formato: '&6 Qualidade da conexao: $qualidade!'
+      # Informacoes do ping baseado no valor
+      # Se informado 30, será mostrada a mensagem definida quando a latencia estiver entre 0 e 30
+      # Se o proximo valor informado for 60, mostrada a mensagem definida caso a latencia esteja entre 30 e 60
+      # E assim por diante
+      informacao:
+        30: '&b Otimo'
+        60: '&e Bom'
+        100: '&a Razoavel'
+        200: '&7 Ruim'
+        500: '&8 Pessimo'
+        1000: '&c Serio isso?'
